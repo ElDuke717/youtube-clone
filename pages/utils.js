@@ -27,25 +27,6 @@ export default function Utils() {
                     onClick={async () => {
                         await fetch('/api/utils', {
                             body: JSON.stringify({
-                                task: 'generate_users',
-                            }),
-                            headers: {
-                                'Content-Type': 'application/json',
-                            },
-                            method: 'POST',
-                        })
-                    }}
-                >
-                    Generate Users
-                </button>
-            </div>
-
-            <div className='flex-1 mb-5'>
-                <button
-                    className='border px-8 py-2 mt-5 mr-8 font-bold rounded-full color-accent-contrast bg-color-accent hover:bg-color-accent-hover-darker'
-                    onClick={async () => {
-                        await fetch('/api/utils', {
-                            body: JSON.stringify({
                                 task: 'clean_database',
                             }),
                             headers: {
