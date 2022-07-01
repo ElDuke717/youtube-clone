@@ -34,7 +34,7 @@ export default function Video({ video }) {
                         <div className=''>
                             <div className=''>
                                 <div className='text-gray-400'>
-                                    <Link href={`/channel/${video.author.username}`}>
+                                    <Link href={`/channel/${video.author.name}`}>
                                         <a className='mr-2 underline'>{video.author.name}</a>
                                     </Link>
                                     · {video.views} views ·{' '}

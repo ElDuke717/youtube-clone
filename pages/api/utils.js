@@ -13,7 +13,7 @@ export default async function handler(req, res) {
             await prisma.user.create({
                 data: {
                     name: faker.name.findName(),
-                    // username: faker.internet.userName().toLowerCase(),
+                    username: faker.internet.userName().toLowerCase(),
                     email: faker.internet.email().toLowerCase(),
                     image: faker.image.avatar(),
                 },
