@@ -24,8 +24,8 @@ model User {
 
   Video Video[]
 
-  subscribers  User[] @relation("Subscribers", references: [id])
-  subscribedTo User[] @relation("Subscribers", references: [id])
+  subscribers  User[] @relation("Subscribers")
+  subscribedTo User[] @relation("Subscribers")
 }
 
 model VerificationToken {
