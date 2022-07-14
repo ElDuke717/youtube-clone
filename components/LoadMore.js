@@ -4,7 +4,8 @@ export default function LoadMore({
     videos,
     setVideos,
     setReachedEnd,
-    author
+    author,
+    subscriptions,
 }) {
     return (
         <div className='flex justify-center'>
@@ -15,6 +16,10 @@ export default function LoadMore({
 
                     if (author) {
                         url += `&author=${author.id}`
+                    }
+
+                    if (subscriptions) {
+                        url += `&subscriptions=${subscriptions}`
                     }
 
                     const res = await fetch(url)
